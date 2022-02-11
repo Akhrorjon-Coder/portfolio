@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.navbarSection {
+  width: 20%;
+  height: 100vh;
+  background: #fdf9ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navbarSection .logo {
+  font-size: 2rem;
+  color: #302e4d;
+  text-transform: capitalize;
+  margin-top: 15%;
+  margin-left: 2.5rem;
+  display: inline-block;
+  position: relative;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+}
+
+.navbarSection .logo::before {
+  content: " ";
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 0.25rem solid #ec1839;
+  border-left: 0.25rem solid #ec1839;
+}
+
+.navbarSection .logo::after {
+  content: " ";
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 0.25rem solid #ec1839;
+  border-bottom: 0.25rem solid #ec1839;
+}
+
+.navbarSection .navbar {
+  padding-top: 30%;
+}
+
+.navbarSection .navbar ul i {
+  padding-right: 0.5rem;
+}
+
+.navbarSection .navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0.5rem 0 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.navbarSection .navbar ul li .navbar_link {
+  color: #302e4d;
+  text-decoration: none;
+}
+
+.navbarSection .navbar ul li .navbar_link .active {
+  color: #ec1839;
+}
+
+.navbarSection .navbar ul li .navbar_link:hover {
+  color: #ec1839;
+}
+
+.navbarSection .navbar ul .line {
+  height: 1px;
+  background: #e8dfec;
+  margin: 0 1rem 0 2rem;
+}
+
+.navbarSection .leftfooter {
+  margin-top: 10rem;
+  margin-left: 2rem;
+  width: 200px;
+  color: #504e70;
+  font-weight: 500;
+}
+
+.homeSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f2f2fc;
+  padding-top: 8rem;
+  padding-left: 10rem;
+  z-index: 0;
+}
+
+.homeSection .personImg {
+  margin: auto;
+  height: 13rem;
+  width: 13rem;
+  background-size: cover;
+  background-image: url("../images/about.jpg");
+  border-radius: 30%;
+  border: 0.5rem solid transparent;
+  border-color: #fff;
+}
+
+.homeSection .name {
+  padding: 1rem 0;
+}
+
+.homeSection .name h1 {
+  text-align: center;
+  color: #302e4d;
+}
+
+.homeSection .name .disc {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  color: #302e4d;
+  font-weight: 500;
+}
+
+.homeSection .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homeSection .socials i {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  color: #ec1839;
+  cursor: pointer;
+}
+
+.homeSection .socials i:hover {
+  color: #302e4d;
+}
+
+section {
+  padding: 3.2rem 5rem 3.2rem 20rem;
+  background: #f2f2fc;
+  height: 100vh;
+}
+
+section h2 {
+  color: #302e4d;
+  display: inline-block;
+  border-bottom: 4px solid #ec1839;
+}
+
+.aboutSection .aboutContent h3 {
+  color: #302e4d;
+}
+
+.aboutSection .aboutContent .title {
+  color: #302e4d;
+  padding: 2rem 1rem .5rem 1rem;
+}
+
+.aboutSection .aboutContent .title span {
+  color: #ec1839;
+}
+
+.aboutSection .aboutContent .discription {
+  padding: .5rem 1rem 2rem 1rem;
+  letter-spacing: .1rem;
+  line-height: 1.5rem;
+}
+
+.aboutSection .aboutContent a {
+  margin-right: 1rem;
+  padding-left: 1rem;
+}
+
+.aboutSection .aboutContent .btn {
+  color: #e8dfec !important;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ec1839), color-stop(#c60e5e), color-stop(#91296e), color-stop(#5b3267), to(#302e4d));
+  background-image: linear-gradient(to right top, #ec1839, #c60e5e, #91296e, #5b3267, #302e4d);
+  padding: .6rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: .3rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.aboutSection .aboutContent .btn:hover {
+  letter-spacing: 1px;
+}
+
+.aboutSection .aboutContent .projects .projectsTitle {
+  color: #302e4d;
+}
+
+.aboutSection .aboutContent .projects .discription {
+  color: #504e70;
+}
+
+.aboutSection .aboutContent .interesting h3 {
+  padding: 1rem 0 .5rem 0;
+}
+
+.aboutSection .aboutContent .interesting p {
+  padding: 0 0 0 1rem;
+}
+
+.servicesSection .servicesContent h2 {
+  display: inline-block;
+  border-bottom: 4px solid #ec1839;
+}
+
+.servicesSection .servicesContent .cards {
+  padding: 6rem 2rem 3rem 4rem;
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.servicesSection .servicesContent .cards .card {
+  width: 30%;
+  background: #fdf9ff;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+}
+
+.servicesSection .servicesContent .cards .card i {
+  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0 1rem 0;
+  color: #ec1839;
+}
+
+.servicesSection .servicesContent .cards .card .title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servicesSection .servicesContent .cards .card .title h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #302e4d;
+}
+
+.servicesSection .servicesContent .cards .card .title .info {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #504e70;
+}
+/*# sourceMappingURL=style.css.map */
